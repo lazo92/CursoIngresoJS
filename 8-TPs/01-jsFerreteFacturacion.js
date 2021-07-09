@@ -27,7 +27,6 @@ function Promedio() {
     let precio1;
     let precio2;
     let precio3;
-    let suma
     let promedio;
 
 
@@ -36,8 +35,7 @@ function Promedio() {
     precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
 
-    suma = precio1 + precio2 + precio3;
-    promedio = suma / 3;
+    promedio = (precio1 + precio2 + precio3) / 3;
 
 
     alert("el promedio es " + promedio);
@@ -52,7 +50,6 @@ function PrecioFinal() {
     let precio2;
     let precio3;
     let suma;
-    let iva;
     let precioFinal;
 
 
@@ -62,8 +59,7 @@ function PrecioFinal() {
 
 
     suma = precio1 + precio2 + precio3;
-    iva = suma * .21;
-    precioFinal = suma + iva;
+    precioFinal = suma + suma * .21;
 
 
     alert("el precio final es " + precioFinal);
