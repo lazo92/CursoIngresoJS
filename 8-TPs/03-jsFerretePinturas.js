@@ -2,12 +2,26 @@
 A.	Al ingresar una temperatura en Fahrenheit debemos mostrar la temperatura en Centígrados con un mensaje concatenado (ej.: " 32 Fahrenheit son 0 centígrados").
 B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en Fahrenheit (ej.: "0  centígrados son 32 Fahrenheit ").
 */
-function FahrenheitCentigrados () 
-{
-	
+function FahrenheitCentigrados() {
+    let Fa;
+    let cen;
+
+
+    Fa = parseInt(document.getElementById("txtIdTemperatura").value);
+    cen = (Fa - 32);
+
+    alert(Fa + " Fahrenheit son " + cen + " centigrados");
+
 }
 
-function CentigradosFahrenheit () 
-{
-	
+function CentigradosFahrenheit() {
+    let Fa;
+    let cen;
+
+
+    cen = parseInt(document.getElementById("txtIdTemperatura").value);
+    fa = (cen + 32);
+
+    alert(cen + " centigrados son " + fa + " Fahrenheit");
+
 }

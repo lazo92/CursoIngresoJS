@@ -14,6 +14,7 @@ function mostrar() {
 	 }
 
 	//de forma larga
+	
 	/*if( edad >= 13 ){
 		if( edad <= 17)
 	  {

@@ -14,7 +14,8 @@ function mostrar() {
 
 	if (edad <= 12) {
 
-		alert(" es un niño");
+
+		alert("es un niño");
 	}
 
 
