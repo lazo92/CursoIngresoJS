@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//tomo el mes
-	let mes
+	let mes;
 	
 	mes = document.getElementById("txtIdMes").value;
 	
@@ -12,9 +12,5 @@ function mostrar()
 			alert(" Este mes tiene 30 o mas dias");
 
 	}
-
-
-	
-
 
 }//FIN DE LA FUNCIÓN
