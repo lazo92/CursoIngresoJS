@@ -4,33 +4,35 @@ sumar los que son positivos y multiplicar los negativos.*/
 function mostrar()
 {
 	let numero;
-	let respuesta;
-	let acPos = 0;
-	let acNeg = 1;
-	let flag = 1;
+    let respuesta;
+    let acPos=0;
+    let acNeg=1;
+    let flag =1;
+
+    do{
+
+        numero=parseInt(prompt("ingrese numero"));
+        if(numero>=0){
+
+            acPos += numero; //acPos=acPos + numero
+            
+        }else{
+            acNeg= acNeg * numero; //acNeg*= numero
+            flag=0;
+        }
+
+        respuesta=prompt("ingresar mas numeros s / n");
 
 
-	do{
-		numero = parseInt(prompt("ingrese numero"));
-		if(numero>=0){
-			 acPos += numero; //acPos = acPos + numero
+    }while(respuesta =='s');
 
-		}else{
-			 acNeg *= numero; //acNeg = acNeg * numero
-			 flag =0;
-		}
+    if(flag){
+        acNeg = 0;
 
-		respuesta = prompt("seguir ingresando numeros? (s/n)");
-	}while(respuesta =="s");
+    }
 
-	if(flag){
-		acNeg = 0;
-	}
-
-	document.getElementById("txtIdSuma").value= acPos;
-	document.getElementById("txtIdProducto").value= acNeg;
-
-
+    document.getElementById("txtIdSuma").value= "la suima es: " + acPos;
+	document.getElementById("txtIdProducto").value= "el producto es : "+acNeg;
 
 
 }//FIN DE LA FUNCIÓN

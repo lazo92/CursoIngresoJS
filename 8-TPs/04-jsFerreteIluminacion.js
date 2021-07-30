@@ -21,33 +21,34 @@ function CalcularPrecio ()
 
     if(lamparas == 5){
         if(marca== "ArgentinaLuz"){
-            descuento = precio * 1.4;   
+            descuento = * .4;   
         }else{
-            descuento = precio *1.3;
+            descuento = *.3;
         }
     }else if(lamparas == 4){
         if( marca=="ArgentinaLuz" || marca=="FelipeLamparas"){
-            descuento = precio * 1.25;
+            descuento = * .25;
         }else{
-            descuento = precio *1.2; 
+            descuento = * .2; 
         }
     }else if(lamparas == 3){
         if(marca =="ArgentinaLuz"){
-            descuento =precio * 1.15;
+            descuento = * .15;
         }else if(marca=="FelipeLamparas"){
-            descuento = precio * 1.1;
+            descuento = * .1;
         }else{
-            descuento= precio * 1.05;
+            descuento= * .05;
         }
     } else{(lamparas >= 6)
-        descuento = precio * 1.5;
+        descuento = * .5;
     }
 
 
     precioDescuento = descuento;
     document.getElementById("txtIdprecioDescuento").value = precioDescuento
 
-
+   // ejercico mio por switch
+   
     switch(lamparas){
         case 5:
             if(marca=="ArgentinaLuz"){
@@ -82,6 +83,8 @@ function CalcularPrecio ()
     precioDescuento = lamparas * descuento;
     document.getElementById("txtIdprecioDescuento").value = precioDescuento
  */
+
+
  // switch / if else
 
  //console.log(la variable q quiero exponer)

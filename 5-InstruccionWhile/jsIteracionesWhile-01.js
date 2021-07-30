@@ -3,12 +3,13 @@ al presionar el botón mostrar 10 repeticiones
 con números ASCENDENTE, desde el 1 al 10.*/
 function mostrar()
 {
-   let control = 1;
    
-   while(control<=10){
+    let numero=1; //control siempre se inicialisa
 
-	   console.log(control);
-	   control++;
-    } 
+    while(numero<=10){
+        console.log(numero);
+        alert(numero);
+        numero++;  // numero = numero + 1
+    }
 
 }//FIN DE LA FUNCIÓN

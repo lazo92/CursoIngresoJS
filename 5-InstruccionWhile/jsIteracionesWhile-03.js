@@ -4,15 +4,12 @@ function mostrar()
 {
 	let clave;
 
-	clave = prompt("ingrese el número clave.");
-	
-	while(clave != "utn750"){
-		// cuando el dato sea invalido hace verdadera la condicion
-
-		clave = prompt("clave invalida. Reingrese clave:");
-	
-	}
-
-  alert("clave correcta!!!");	
-	
+    clave= prompt("ingrese clave");
+    
+    while(clave != "utn750"){
+        //console.log(clave) poniendo esto se puede mostrar las claves ingresadas menos la primera  
+        // cuando el dato sea invalido hace verdadera la condicion
+        clave= prompt("clave incorrecta. ingrese clave");
+    }
+    alert("clave correcta");
 }//FIN DE LA FUNCIÓN

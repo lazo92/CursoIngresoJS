@@ -1,26 +1,25 @@
 /*
 al presionar el botón 
-pedir un número entre 0 y 9 inclusive.*/
+pedir un número entre 0 y 10 inclusive.*/
 function mostrar()
 {
-	/*var numeroIngresado;
-	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
-     */
-
 	let numero;
-	let salida;
 
-	numero = parseInt(prompt(" ingrese numero entre 0 y 9"));
+    numero= parseInt(prompt("ingrese numero entre 0 y 10"));
    
-	// en este caso se puede usar tanto OR "||" u AND "&&"
-	while(numero<0 || numero>9){
-		alert(" numero incorrecto");
-		numero = parseInt(prompt("ingrese numero correcto!"));
+   // en este caso se puede usar tanto OR "||" u AND "&&"(si son mas de 3 diferencias mejor usar "OR")
+    
+   while(isNaN(numero) || numero<0 || numero>10){
+        
+        numero=parseInt(prompt("numero invalido. ingrese numero"));
+        
+    }
+    alert("numero correcto");
 
-	}
-	alert("numero correcto!!")
+    document.getElementById("txtIdNumero").value= numero
 
-	document.getElementById("txtIdNumero").value = numero 
+
+
 
 	
 }//FIN DE LA FUNCIÓN
