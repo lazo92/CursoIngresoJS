@@ -164,8 +164,20 @@ function mostrar()
     tipoMaxBolsas="cal";
     cantMaxBolsas = acumCal;
   }
+  
+  document.write("A) el importe total a pagar es " + importeBruto + "<br>");
+  if(descuento>0){
+  document.write("B) el importe con descuento a pagar es " + importeNeto + "<br>");
+  }
+
+  document.write("C) tipo con mas cantidad de bolsas " + tipoMaxBolsas + "con " + cantMaxBolsas "bolsas <br>");
+
+  document.write("D) tipo mas caro " + mayorTipo + "precio: " + mayorPrecio + "<br>");
 
 
+
+
+  
   
 
 
